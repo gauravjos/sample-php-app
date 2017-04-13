@@ -5,5 +5,4 @@ COPY app /var/www/html
 COPY dir.conf /etc/apache2/conf.d/
 COPY httpd-foreground /usr/local/bin/
 EXPOSE 80
-#CMD ["httpd-foreground"]
 CMD ["/usr/sbin/apachectl","-DFOREGROUND"]
